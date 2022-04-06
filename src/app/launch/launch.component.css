@@ -1,0 +1,40 @@
+
+img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.first{
+    position: absolute;
+    color:cornflowerblue;
+    text-align: center;
+    margin-left: 250px;
+    margin-top: 50px;
+    line-height: 0px;
+    font-weight: bolder;
+    font-size: x-large;
+}
+p{
+    line-height: 30px;
+}
+ .first:hover{
+    color: crimson;
+}
+
+#launch{
+    color: whitesmoke;
+    background-color: black;
+    border-radius: 3px;
+    width: max-content;
+    padding: 5px 15px;
+    margin-top: 550px;
+    margin-left: 650px;
+    position: absolute;
+}
+
+#launch:hover{
+    color: black;
+    background-color:wheat;
+}
+

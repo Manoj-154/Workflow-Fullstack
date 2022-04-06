@@ -1,0 +1,40 @@
+<!-- <img *ngIf="imgpicture" src="https://imageio.forbes.com/specials-images/imageserve/1185432675/CHINA-ECONOMY-MANUFACTURING-AUTO/960x0.jpg?fit=bounds&format=jpg&width=960" alt="" width="80%">
+
+<div id="section">
+    <ul>
+        <li><a (click)="changeView()" routerLink="design">Design</a></li>
+        <li><a (click)="changeView()" routerLink="analysis">Analysis</a></li> 
+        <li><a (click)="changeView()" routerLink="manufactur">Manufacturing</a></li>
+        <li><a (click)="changeView()" routerLink="assembling">Assembling</a></li>
+        <li><a (click)="changeView()" routerLink="test-drive">Test-Drive</a></li>
+        <li><a (click)="changeView()" routerLink="marketing">Marketing</a></li> -->
+        <!-- <li><button (click)="changeView()" routerLink="login">Home-Page</button></li> -->
+        <!-- <li><a (click)="changeView()" routerLink="login">Home-Page</a></li>
+    </ul>
+</div> -->
+
+<!-- -----------------------html -->
+<section *ngIf="worksection">
+ <!-- background: url(https://www.synopsys.com/blogs/software-security/wp-content/uploads/2019/02/auto-software-security-header.jpg) no-repeat; -->
+<img src="https://www.synopsys.com/blogs/software-security/wp-content/uploads/2019/02/auto-software-security-header.jpg"  style="background-repeat: no-repeat;" alt="">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <input type="checkbox" id="check">
+  <label for="check">
+    <i class="fas fa-bars" id="btn">&nbsp; work-section </i>
+    <i class="fas fa-times" id="cancel"> &nbsp; cancel</i>
+  </label>
+  <div class="sidebar">
+  <header>work-section</header>
+  <ul>
+   <li><a (click)="changeView()" routerLink="design" href="#"><i class="fas fa-qrcode"></i>Design</a></li>
+   <li><a (click)="changeView()" routerLink="analysis" href="#"><i class="fas fa-sliders-h"></i>Analysis</a></li>
+   <li><a (click)="changeView()" routerLink="manufacture" href="#"><i class="fa fa-car fa-lg"></i>Manufacturing</a></li>
+   <li><a (click)="changeView()" routerLink="assembling" href="#"><i class="fa fa-american-sign-language-interpreting"></i>Assembling</a></li>
+   <li><a (click)="changeView()" routerLink="test-drive" href="#"><i class="fas fa-link"></i>Testing</a></li>
+   <li><a (click)="changeView()" routerLink="launch" href="#"><i class='fas fa-coins'></i>Launch</a></li>
+   <!-- <li><a (click)="changeView()" routerLink="about" href="#"><i class="far fa-question-circle"></i>About</a></li>
+   <li><a (click)="changeView()" routerLink="contact" href="#"><i class="far fa-envelope"></i>Contact</a></li> -->
+  </ul>
+ </div>
+</section>
+

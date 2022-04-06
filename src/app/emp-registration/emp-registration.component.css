@@ -1,0 +1,98 @@
+img{
+width: 100%;
+height: 100%;
+position: absolute;
+}
+
+.employees{
+    border: 1px solid black;
+    background-color: wheat;
+    color: black;
+    font-weight: bolder;
+    width: max-content;
+    /* justify-content: center; */
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+    margin-left: 500px;
+    margin-top:5px;
+    opacity: 0.8;
+   position: absolute;
+}
+h2{
+    text-align: center;
+    color: black;
+    font-weight: bolder;
+}
+
+#name1{
+    margin-left: 30px;
+}
+#name2{
+    margin-left: 45px;
+}
+#email{
+    margin-left: 45px;
+}
+#male{
+    margin-left: 55px;
+    cursor: pointer;
+}
+
+#female{
+    margin-left: 20px;
+    cursor: pointer;
+}
+#date{
+    margin-left: 15px;
+    width: 170px;
+}
+#nationality{
+    margin-left: 28px;
+    cursor: pointer;
+    width: 170px;
+}
+#married{
+    margin-left: 15px;
+}
+#unmarried{
+    margin-left: 10px;
+}
+#address1{
+    margin-left: 40px;
+}
+#address2{
+    margin-left: 40px;
+}
+#ifsc{
+    margin-left: 60px;
+}
+
+#btn{
+    /* position: absolute; */
+    margin-left: 90px;
+    margin-top: 30px;
+    background-color: black;
+    color: beige;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#btn1{
+    /* margin-top: 50px; */
+    margin-left: 25px;
+    background-color: black;
+    color: beige;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/* #btn:hover{
+    color: black;
+    background-color: crimson;
+
+}
+#btn1:hover{
+    color: black;
+    background-color: crimson;
+} */

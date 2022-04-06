@@ -1,0 +1,52 @@
+<section class="background">
+    <!-- <img src="https://buntyllc.com/wp-content/uploads/2018/06/Car-Production-e1530176401478.jpg" alt=""> -->
+<div class="form" *ngIf="isVisible"> 
+<form action=""   >
+    <h2>Worker login</h2><hr>
+    <br>
+    <label for="Emp">Department<b> : </b> </label>
+    <select name="Emp" id="Department" >
+        <option value="choose">Choose</option>
+        <option value="Design">Design</option>
+        <option value="Analysis">Analysis</option>
+        <option  value="Manufacturing">Manufacturing</option>
+        <option value="Assembling">Assembling</option>
+        <option value="Testing">Testing</option>
+        <option value="Marketing">Marketing</option>
+    </select><br><br>
+    <!-- <br> -->
+    <label for="id">Employee Id <b>: </b></label>
+    <input type="tel" name="id" id="empid" size="10"><br><br>
+    <label for="code">Secret Code <b>: </b></label>
+    <input type="tel" name="code" id="code" size="10" ><br>
+
+    <input type="button" value="login" id="btn">
+    <hr>
+    <a href="./login.component.html" target="_blank" rel="noopener noreferrer" id="reset" >Reset Code</a>
+    &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+    <!-- <button routerLink="emp-registration" (click)="changeView()" id="regn" >Register Here</button>  -->
+    <a href="" routerLink="emp-registration" (click)="changeView()" id="regn" >Register Here</a>
+</form>
+</div>
+
+<div class="managerform" *ngIf="isVisible"> 
+    <form action="">    
+    <h2>Manager login</h2><hr><br>
+    <label for="id">Manager Id <b>: </b></label>
+    <input type="tel" name="id" id="mngid" size="10"><br><br>
+    <label for="id">Email Id <b>: </b></label>
+    <input type="tel" name="id" id="mail" size="10"><br><br>
+    <label for="code">Password <b>: </b></label>
+    <input type="tel" name="code" id="pwd" size="10" ><br>
+    
+    <input type="button" value="login" id="mngbtn" routerLink="work-section" (click)="changeView()" >
+    <hr>
+    <a href="./login.component.html" target="_blank" rel="noopener noreferrer" id="reset" >Reset Code</a>
+    &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+    <!-- <button routerLink="emp-registration" (click)="changeView()" id="regn" >Register Here</button>  -->
+    <a href="" routerLink="emp-registration" (click)="changeView()" id="regn" >Register Here</a>
+
+</form>
+    </div>
+    
+</section>
