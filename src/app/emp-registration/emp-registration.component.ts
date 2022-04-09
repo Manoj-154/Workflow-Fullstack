@@ -9,7 +9,13 @@ export class EmpRegistrationComponent implements OnInit {
 
   constructor() { }
 
+isVisible=true
+
   ngOnInit(): void {
     
+  }
+
+  changeView(){
+    this.isVisible=false
   }
 }

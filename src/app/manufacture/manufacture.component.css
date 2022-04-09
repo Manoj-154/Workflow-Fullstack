@@ -33,23 +33,20 @@ p{
     line-height: 35px;
 }
 
-p:hover{
+/* p:hover{
     color: white;
     background-color: black;
     padding: 0px 20px;
     border-radius: 5px;
     width: fit-content;
-    /* font-weight: bolder; */
+
     font-family: cursive;
-    /* font-size: 20px; */
-    /* border-top: 1px solid black;
-    border-bottom: 1px solid black; */
     transition: all .5s ease;
-}
+} */
 
 #backimage{
     position: relative;
-    width: 850px;   
+    width: 855px;   
     height: 680px;
     margin-left: 480px;
     margin-top: -630px;
@@ -107,4 +104,25 @@ p:hover{
     background-color: crimson;
     
     cursor: pointer;
+}
+
+
+#back{
+    border-radius: 3px;
+    padding: 10px 15px;
+    width: 100px;
+
+    color: white;
+    background-color: black;
+
+    top:150px;
+    right: 800px;
+    position:absolute;
+}
+
+#back:hover{
+    background-color: crimson;
+    color: black;
+    cursor: pointer;
+    
 }

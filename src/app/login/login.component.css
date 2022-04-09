@@ -6,20 +6,21 @@ img{
     position:absolute;
 }
 .form{
-    margin-left: 200px;
+    margin-left: 210px;
     margin-top: 200px;
     border: 1px solid black;
     background-color: black;
     color: crimson;
     width: max-content;
+    /* opacity: .8; */
     /* padding: 50px; */
-    padding-left: 50px;
+    padding-left: 60px;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-right: 50px;
+    padding-right: 60px;
     border-radius: 5px;
     position: relative;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 #Department{
@@ -71,22 +72,23 @@ h2{
 
 
 .managerform{
-    margin-left: 800px;
-    margin-top: -305px;
+    margin-left: 810px;
+    margin-top: -300px;
     border: 1px solid black;
     /* background-color: gray; */
     background-color: black;
     color: crimson;
     width: max-content;
     /* height: 295px; */
-    padding-left:50px;
-    padding-right:50px;
+    padding-left:55px;
+    padding-right:55px;
     padding-top:5px;
     padding-bottom:10px;
+    /* opacity: .8; */
     /* padding: 50px; */
     border-radius: 5px;
     /* text-align: center; */
-    font-weight: bold;
+    font-weight: bolder;
     /* border-bottom-left-radius: 100px; */
     /* border-radius: 15px; */
     position: relative;
@@ -107,7 +109,7 @@ h2{
 #mngbtn{
     border-radius: 5px;
 text-align: center;
-margin-left: 90px;
+margin-left: 105px;
 margin-top: 30px;
 }
 #mngbtn:hover{

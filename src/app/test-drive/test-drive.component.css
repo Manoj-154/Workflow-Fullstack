@@ -11,6 +11,7 @@
     margin-top: 0px;
     font-weight: bolder;
     font-size: larger;
+    margin-bottom: -10px;
 }
 
 img{
@@ -22,19 +23,18 @@ img{
 
  .first p{
     text-align: center;
-    line-height: 50px;
+    line-height: 20px;
     font-weight: bolder;
-
+    font-size:x-large
 }
 
 #floating{
     font-size: 40px;
-    color: crimson;
+    color:black;
     position: absolute;
 }
 p:hover{
-    
-transition: all .5s ease;
+    color: crimson;
 
 }
 
@@ -44,7 +44,9 @@ background-color: black;
 border-radius: 3px;
 cursor: pointer;
 padding: 5px 15px;
-margin-left: 550px;
+margin-top: 50px;
+margin-left: 620px;
+position: relative;
 }
 
 #completed{
@@ -53,16 +55,49 @@ background-color: black;
 border-radius: 3px;
 cursor: pointer;
 padding: 5px 15px;
-margin-left: 80px;
+margin-left: 30px;
+position: relative;
 }
 
+#creatework{
+    color: white;
+background-color: black;
+border-radius: 3px;
+cursor: pointer;
+padding: 5px 15px;
+position: absolute;
+margin-top: 50px;
+margin-left: 490px;
+}
+
+#creatework:hover{
+    color: black;
+    background-color: crimson;
+}
 #InProgress:hover{
     color:  black;
     background-color: crimson;
-    transition: all .7s  ease;
+    /* transition: all .7s  ease; */
 }
 
 #completed:hover{
     color: black;
     background-color: crimson;
+}
+
+#back{
+    color: wheat;
+    background-color: black;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: -228px;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 5px 30px;
+    font-weight: bold;
+}
+
+#back:hover{
+    color: crimson;
+    background-color:black;
 }

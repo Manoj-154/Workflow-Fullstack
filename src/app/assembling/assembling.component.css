@@ -47,12 +47,14 @@ p:hover{
 }
 
 #progress{
-    margin-left: -300px;
+    margin-left: -380px;
     position: relative;
     border-radius: 3px;
-    margin-top: 50px;   
+    margin-top: 38px;   
     background-color: black;
     color: white;
+    position: relative;
+    padding: 10px 25px;
 }
 #progress:hover{
     color: white;
@@ -63,11 +65,13 @@ p:hover{
 }
 
 #completed{
+    position: relative;
     margin-left: 70px;
     border-radius: 3px;
     transition: all .5s ease;
     background-color: black;
     color: white;
+    padding: 10px 25px;
 }
 
 #completed:hover{
@@ -76,13 +80,28 @@ p:hover{
     cursor: pointer;
 }
 
+#back{
+    color: white;
+    background-color: black;
+    left: 30px;
+    padding: 10px 25px;
+    position: relative;
+    border-radius: 3px;
+}
+
+#back:hover{
+    color: black;
+    background-color: wheat;
+}
+
 #floating{
     font-weight: bolder;
     font-size: xx-large;
     margin-top: 80px;
     position: absolute;
+    color: crimson;
 }
 
 #floating:hover{
-    color: crimson;
+    color: wheat;
 }

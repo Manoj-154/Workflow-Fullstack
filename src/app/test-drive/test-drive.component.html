@@ -1,3 +1,4 @@
+<section *ngIf="isVisible">
 <img src="https://etimg.etb2bimg.com/photo/64254603.cms" alt="">
 <!-- <MARQUEE ONMOUSEOVER="this.stop()" id="floating" ONMOUSEOUT="this.start()" BEHAVIOR="alternate">Testing a Production car</MARQUEE> -->
 <MARQUEE DIRECTION="down" BEHAVIOR="alternate" id="floating" STYLE="width:1300px; height:600px">
@@ -5,23 +6,32 @@
   </MARQUEE>
 <div class="first" >
 
-<p> Now that the car is ready to drive, it will be tested for quality assurance and safety.  <br>
+<p> Now that the car is ready to drive, it will be tested for quality assurance and safety. </p> 
 
-The vehicle is checked for any imperfections or inconsistencies in the interior and exterior design.  <br>
+<p>The vehicle is checked for any imperfections or inconsistencies in the interior and exterior design. </p>
 
-The car will run through a series of tests similar to those given at a DMV: <br>
-the engine is started and stopped several times, the steering alignment is adjusted, <br> the headlights are checked for brightness and reach, brakes are tested for safety, and more. <br>
+ <p> The car will run through a series of tests similar to those given at a DMV:</p> 
+ <p> The engine is started and stopped several times, the steering alignment is adjusted </p>
+   
+   
+   <p> The headlights are checked for brightness and reach, brakes are tested for safety, and more.</p>
 
-Then, the car will be tested in heavy water pressure to find leaks. <br>
+ <p> Then, the car will be tested in heavy water pressure to find leaks.</p>
 
-The cars programming will be tested, and the electrical units will be checked to ensure safety and accessibility. <br>
+ <p> The cars programming will be tested, and the electrical units will be checked to ensure safety and accessibility.</p>
 
-Finally, crash testing will be executed to observe how the car handles impacts, and to test airbag and seat belt performance. <br>
+ <p> Finally, crash testing will be executed to observe how the car handles impacts, and to test airbag and seat belt performance.</p> 
 
-If the car requires no further tweaks in design and production for safety, then the car can be presented to the market. </p>
+ <p> If the car requires no further tweaks in design and production for safety, then the car can be presented to the market. </p>
 
-<button id="InProgress" >InProgress</button>
-<button id="completed" >Completed</button>
+
+<button [routerLink]="'/create-all'" (click)="changeView()"  id="creatework">Create Task</button>
+<button id="InProgress" [routerLink]="['/test-drive']" (click)="changeView()" (click)="onsubmit()" >InProgress</button>
+<button id="completed"  [routerLink]="['/launch']" (click)="changeView()" (click)="oncomplete()" >Completed</button>
+<button [routerLink]="'/work-section'" (click)="changeView()"  id="back" >Back</button>
 
 
 </div>
+</section>
+
+

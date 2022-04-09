@@ -1,5 +1,5 @@
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLGt2BKX0hyoIYlLBp8sFP8nChlK-Q6Ldp1w&usqp=CAU" alt="">
-<div class="first" > 
+  <img *ngIf="isVisible" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLGt2BKX0hyoIYlLBp8sFP8nChlK-Q6Ldp1w&usqp=CAU" alt="">
+<div class="first"  > 
 
   <p> Market research</p>
 <p>  Naming research (if needed)</p>
@@ -11,4 +11,6 @@
 <p>  Craft presentations for management, auto shows, press, social media, dealers, analysts</p>
 
 </div>
-<button id="launch">Launch </button>
+<!-- <button id="launch" [routerLink]="'/dispatch'" (click)="changeView()" >Launch </button> -->
+<button [routerLink]="'/work-section'" (click)="changeView()"  id="back" >Back</button>
+<button [routerLink]="['/dispatch']" (click)="changeView()" id="launch" (click)="onlaunch()" >Launch </button>

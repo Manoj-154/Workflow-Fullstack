@@ -1,5 +1,5 @@
 <section>
-    <div class="tasks" >  
+    <div class="tasks" *ngIf="isVisible" >  
     
     <form action="">
           <h2>Tasks </h2>
@@ -35,7 +35,8 @@
             <input type="radio" id="task10" name="five" value="task10">
             <label for="task10"><b>Not completed</b></label><br>
     
-          <button id="update">Update Status</button>
+          <button  [routerLink]="['/status']" (click)="changeView()" id="update">Update Status</button>
+          <button [routerLink]="'/work-section'" (click)="changeView()"  id="back" >Back</button>
     
     </form>
     </div>

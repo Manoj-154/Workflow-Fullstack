@@ -7,9 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TestDriveComponent implements OnInit {
 
+  isVisible=true
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  changeView(){
+    this.isVisible=false
+  }
+
+  onsubmit(){
+    alert("Complete your Task");
+  }
+  oncomplete(){
+    alert("Thank you,Go for  Launching a Car");
   }
 
 }

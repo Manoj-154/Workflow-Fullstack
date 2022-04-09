@@ -1,13 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-design',
-  templateUrl: './design.component.html',
-  styleUrls: ['./design.component.css']
+  selector: 'app-dispatch',
+  templateUrl: './dispatch.component.html',
+  styleUrls: ['./dispatch.component.css']
 })
-export class DesignComponent implements OnInit {
+export class DispatchComponent implements OnInit {
 
   isVisible=true
+
   constructor() { }
 
   ngOnInit(): void {

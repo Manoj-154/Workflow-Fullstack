@@ -7,14 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WorkSectionComponent implements OnInit {
 
-  worksection=true;
+  isVisible=true
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
   changeView(){
-    this.worksection=false
+    this.isVisible=false
   }
 
 }

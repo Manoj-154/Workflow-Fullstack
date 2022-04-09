@@ -3,6 +3,7 @@ img{
     position: absolute;
     width: 100%;
     height: 100%;
+    top: 0px;
 }
 
 .first{
@@ -10,10 +11,11 @@ img{
     color:cornflowerblue;
     text-align: center;
     margin-left: 250px;
-    margin-top: 50px;
+    margin-top: 30px;
     line-height: 0px;
     font-weight: bolder;
     font-size: x-large;
+    top: -5px;
 }
 p{
     line-height: 30px;
@@ -27,8 +29,8 @@ p{
     background-color: black;
     border-radius: 3px;
     width: max-content;
-    padding: 5px 15px;
-    margin-top: 550px;
+    padding: 10px 30px;
+    top: 500px;
     margin-left: 650px;
     position: absolute;
 }
@@ -38,3 +40,20 @@ p{
     background-color:wheat;
 }
 
+
+
+#back{
+    color: crimson;
+    background-color: black;
+    top: 40px;
+    right: 30px;
+    width: max-content;
+    padding: 10px 25px;
+    position: absolute;
+    border-radius: 3px;
+}
+
+#back:hover{
+    color: black;
+    background-color: wheat;
+}

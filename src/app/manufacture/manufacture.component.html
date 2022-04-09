@@ -1,5 +1,5 @@
 
-<div class="manufacture" >
+<div class="manufacture" *ngIf="isVisible" >
 
     <MARQUEE ONMOUSEOVER="this.stop()" id="floating"  ONMOUSEOUT="this.start()" BEHAVIOR="alternate">Work to be done </MARQUEE>
   
@@ -18,6 +18,8 @@
   </div>
   <div class="buttons">
   
-  <button id="progress">InProgress</button>
-  <button id="completed">Completed</button>
+  <button [routerLink]="['/manufacture']" (click)="changeView()" (click)="onsubmit()" id="progress">InProgress</button>
+  <button [routerLink]="['/assembling']" (click)="changeView()" (click)="oncomplete()"  id="completed">Completed</button>
+
+  <button [routerLink]="'/work-section'" (click)="changeView()"  id="back" >Back</button>
   </div>

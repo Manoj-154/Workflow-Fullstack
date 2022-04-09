@@ -17,6 +17,7 @@ section{
     height: 100%;
     position: absolute;
     width: 100%;
+    top: 0px;
 }
 
 #update{
@@ -28,4 +29,22 @@ cursor: pointer;
 #update:hover{
     color: wheat;
     background-color:crimson;
+}
+
+#back{
+    border-radius: 3px;
+    padding: 10px 15px;
+    width: 100px;
+    color: white;
+    background-color: black;
+    top:20px;
+    right: 50px;
+    position:absolute;
+}
+
+#back:hover{
+    background-color: wheat;
+    color: black;
+    cursor: pointer;
+    
 }

@@ -13,6 +13,10 @@ import { ManufactureComponent } from './manufacture/manufacture.component';
 import { AssemblingComponent } from './assembling/assembling.component';
 import { TestDriveComponent } from './test-drive/test-drive.component';
 import { LaunchComponent } from './launch/launch.component';
+import { StatusComponent } from './status/status.component';
+import { DispatchComponent } from './dispatch/dispatch.component';
+import { CreateDesignComponent } from './create-design/create-design.component';
+import { CreateAllComponent } from './create-all/create-all.component';
 
 
 @NgModule({
@@ -27,7 +31,11 @@ import { LaunchComponent } from './launch/launch.component';
     ManufactureComponent,
     AssemblingComponent,
     TestDriveComponent,
-    LaunchComponent
+    LaunchComponent,
+    StatusComponent,
+    DispatchComponent,
+    CreateDesignComponent,
+    CreateAllComponent
   ],
   imports: [
     BrowserModule,

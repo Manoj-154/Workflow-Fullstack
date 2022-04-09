@@ -1,6 +1,7 @@
-<section class="background">
-    <!-- <img src="https://buntyllc.com/wp-content/uploads/2018/06/Car-Production-e1530176401478.jpg" alt=""> -->
-<div class="form" *ngIf="isVisible"> 
+<section class="background" *ngIf="isVisible" >
+    <!-- <img src="https://wallpaperaccess.com/full/2314950.jpg" alt=""> -->
+    <img src="https://34co0u35pfyt37c0y0457xcu-wpengine.netdna-ssl.com/wp-content/uploads/2020/01/USD-Cyber-Cybersecurity-vs-Information-Security-vs-Network-Security-_2.jpg" alt="">
+<div class="form" >
 <form action=""   >
     <h2>Worker login</h2><hr>
     <br>
@@ -29,7 +30,7 @@
 </form>
 </div>
 
-<div class="managerform" *ngIf="isVisible"> 
+<div class="managerform" > 
     <form action="">    
     <h2>Manager login</h2><hr><br>
     <label for="id">Manager Id <b>: </b></label>
@@ -41,7 +42,7 @@
     
     <input type="button" value="login" id="mngbtn" routerLink="work-section" (click)="changeView()" >
     <hr>
-    <a href="./login.component.html" target="_blank" rel="noopener noreferrer" id="reset" >Reset Code</a>
+    <a href="./login.component.html" target="_blank" rel="noopener noreferrer" id="reset" >Reset Password</a>
     &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
     <!-- <button routerLink="emp-registration" (click)="changeView()" id="regn" >Register Here</button>  -->
     <a href="" routerLink="emp-registration" (click)="changeView()" id="regn" >Register Here</a>

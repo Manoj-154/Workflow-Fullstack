@@ -1,0 +1,10 @@
+<!-- <p *ngIf="isVisible" > hii </p> -->
+
+
+
+<div *ngIf="isVisible" >
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsmzuVPJeIMgnG34LCPQccQrj_If5to6e4yA&usqp=CAU" alt="">
+<button id="Inprogress"  [routerLink]="['/design']" (click)="changeView()" (click)="onsubmit()" >InProgress</button>
+<button id="completed" [routerLink]="['/analysis']" (click)="changeView()" (click)="oncomplete()" >Completed</button>
+</div>
+

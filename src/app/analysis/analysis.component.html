@@ -1,5 +1,5 @@
 
-<section>
+<section *ngIf="isVisible">
     <img id="img1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQomG1rAeSYybO5PgS9U87lhQPid7MOIg_rrQ&usqp=CAU" alt="" >
     
      <MARQUEE ONMOUSEOVER="this.stop()" id="floating" ONMOUSEOUT="this.start()" BEHAVIOR="alternate">Analysing of Production </MARQUEE>
@@ -19,8 +19,9 @@
       <p> Computer-aided-engineering (CAE) </p> 
       <p>Advertisements</p> 
   
-    <button id="progress" >InProgress</button>
-    <button id="completed" >Completed</button>
-  
+    <button id="progress" [routerLink]="['/analysis']" (click)="changeView()" (click)="onsubmit()"  >InProgress</button>
+    <button id="completed" [routerLink]="['/manufacture']" (click)="changeView()" (click)="oncomplete()">Completed</button>
+    <button id="back" [routerLink]="'/work-section'" (click)="changeView()">Back</button>
   </div>
+  
   </section>

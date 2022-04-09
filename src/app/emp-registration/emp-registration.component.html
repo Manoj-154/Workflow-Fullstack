@@ -1,6 +1,7 @@
-<!-- *ngIf="isVisible" -->
-<!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScyJpn9szcjwGuqZCN6gE-TW10Y1y2Zm8jEA&usqp=CAU" alt=""> -->
-<div class="employees" >
+
+
+<img src="https://static.vecteezy.com/system/resources/previews/004/941/847/large_2x/cosmetic-background-for-product-branding-and-packaging-presentation-geometry-form-circle-molding-on-podium-stage-with-shadow-of-leaf-background-design-eps10-vector.jpg" alt="">
+<div class="employees" *ngIf="isVisible" >
     <form action="">
         <h2>Create Account</h2>
         <label id="name" for="">First Name :</label>
@@ -17,9 +18,10 @@
         <br><br>
         <label id="gender" for="gender">Gender :</label>
         <input type="radio" name="male" id="male" value="male">
-        <label for="gender">Male</label>
+        <label for="male">Male</label>
+        <label for="female"></label>
         <input type="radio" name="female" id="female" value="female">
-        <label for="gender">Female</label>
+        <label for="female">Female</label>
         <br><br>
         <label for="">Date of Birth : </label>
         <input type="date" name="" id="date">
@@ -34,18 +36,28 @@
             <option value="">Japan</option>
             <option value="">Russia</option>
         </select><br><br>
+        <label for="">Department : </label>
+        <select name="Department" id="Department">
+            <option value="">Choose</option>
+            <option value="">design</option>
+            <option value="">analysis</option>
+            <option value="">manufacture</option>
+            <option value="">assembling</option>
+            <option value="">test-drive</option>
+            <option value="">launch</option>
+        </select><br><br>
         <label for="">Relationship : </label>
         <input type="radio" name="married" id="married">
         <label for="">Married</label>
         <input type="radio" name="unmarried" id="unmarried">
         <label for="">Unmarried</label>
         <br><br>
-        <label id="address" for=""> Address 1:</label>
-        <input type="textarea" name="" id="address1"  >
+        <label  for="" item id="add" > Address :</label>
+        <input type="textarea" name="" id="address"  >
         <br><br>
-        <label  for="">Address 2:</label>
+        <!-- <label  for="">Address 2:</label>
         <input type="text" name="" id="address2">
-        <br><br>
+        <br><br> -->
         <label for="">Bank Account : </label>
         <input type="tel" name="account" id="accnum">
         <br><br>
@@ -56,5 +68,6 @@
         <!-- <input type="reset" value="Reset" id="btn"> -->
         <!-- <input type="button" value="Submit" id="btn1"> -->
         <button type="submit" id="btn1">Submit</button>
+        <p>Already have an account ? <a href="" [routerLink]="['/login']" (click)="changeView()" >Login</a></p>
     </form>
 </div>

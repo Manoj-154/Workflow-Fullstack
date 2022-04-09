@@ -9,6 +9,8 @@ import { ManufactureComponent } from './manufacture/manufacture.component';
 import { LaunchComponent } from './launch/launch.component';
 import { TestDriveComponent } from './test-drive/test-drive.component';
 import { WorkSectionComponent } from './work-section/work-section.component';
+import { DispatchComponent } from './dispatch/dispatch.component';
+import { StatusComponent } from './status/status.component';
 
 
 
@@ -21,7 +23,9 @@ const routes: Routes = [
   {path:"manufacture",component:ManufactureComponent},
   {path:"assembling",component:AssemblingComponent},
   {path:"test-drive",component:TestDriveComponent},
-  {path:"launch",component:LaunchComponent}
+  {path:"launch",component:LaunchComponent},
+  {path:"dispatch",component:DispatchComponent},
+  {path:"status",component:StatusComponent}
 ];
 
 @NgModule({

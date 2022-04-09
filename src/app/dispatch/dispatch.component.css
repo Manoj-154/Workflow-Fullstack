@@ -1,0 +1,49 @@
+/* img{
+    position: fixed;
+} */
+/* #one{
+    position:absolute;
+    width: 300px;
+    height: fit-content;
+}
+#two{
+    position: absolute;
+    width:400px;
+    height: 100%;
+} */
+/* #three{
+    width: 100%;
+ 
+    position: absolute;
+    right: 0px;
+    left: 30px;
+} */
+#four{
+    /* width: 900px;
+    height: 10%; */
+    top: 0px;
+    right: auto;
+    margin-right: 0px;
+    position: fixed;
+}
+
+section{
+    width: fit-content;
+}
+
+#logout{
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    top: 30px;
+    right: 80px;
+    position: fixed;
+    color: wheat;
+    background-color: black;
+    font-weight: bolder;
+    cursor: pointer;
+}
+#logout:hover{
+color: black;
+background-color: white;
+}
