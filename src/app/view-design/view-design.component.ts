@@ -38,14 +38,5 @@ export class ViewDesignComponent implements OnInit {
     alert("Complete the workflow to proceed");
   }
 
-  // updatework(id: number){
-  //   this.router.navigate(['update-work', id]);
-  // }
-
-  // deletework(id: number){
-  //   this.carservise.deletework(id).subscribe( data => {
-  //     console.log(data);
-  //     this.getEmployees();
-  //   })
-  // }
+ 
 }

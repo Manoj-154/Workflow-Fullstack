@@ -63,7 +63,7 @@ label #btn{
 }
 label #cancel{
   z-index: 1111;
-  /* left: -195px; */
+  
   left: -170px;
 
   top: 25px;
@@ -83,22 +83,16 @@ label #cancel{
 #check:checked ~ label #cancel{
   left: 40px;
   top: 600px;
-  /* left: 195px; */
-
+ 
 }
 #check:checked ~ section{
   margin-left: 250px;
 }
 section{
-  /* background: url(http://blogs.sw.siemens.com/wp-content/uploads/sites/19/2019/09/Autonomous-Car-Software_2-1.png) no-repeat; */
-  
-  /* background: url(https://www.synopsys.com/blogs/software-security/wp-content/uploads/2019/02/auto-software-security-header.jpg) no-repeat; */
-
-  /* background-color: black; */
   background-position: center;
   background-size: cover;
   height: 100vh;
-  /* height: 100%; */
+ 
   transition: all .5s;
 }
 
