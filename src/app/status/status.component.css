@@ -17,7 +17,12 @@ img{
     position: absolute;
     padding: 10px 20px;
     width: 100px;
-    border-radius: 3px;
+    border-radius: 5px;
+}
+#Inprogress:hover,#completed:hover{
+    cursor: pointer;
+    color: black;
+    background-color: aliceblue;
 }
 #completed{
     color: crimson;

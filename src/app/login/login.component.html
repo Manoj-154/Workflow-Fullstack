@@ -1,9 +1,9 @@
-<section class="background" *ngIf="isVisible" >
-    <!-- <img src="https://wallpaperaccess.com/full/2314950.jpg" alt=""> -->
+<!-- <section class="background" *ngIf="islog" >
+   
     <img src="https://34co0u35pfyt37c0y0457xcu-wpengine.netdna-ssl.com/wp-content/uploads/2020/01/USD-Cyber-Cybersecurity-vs-Information-Security-vs-Network-Security-_2.jpg" alt="">
 <div class="form" >
-<form action=""   >
-    <h2>Worker login</h2><hr>
+<form action=""   > -->
+    <!-- <h2>Worker login</h2><hr>
     <br>
     <label for="Emp">Department<b> : </b> </label>
     <select name="Emp" id="Department" >
@@ -15,39 +15,71 @@
         <option value="Testing">Testing</option>
         <option value="Marketing">Marketing</option>
     </select><br><br>
-    <!-- <br> -->
-    <label for="id">Employee Id <b>: </b></label>
+
+    <label for="id" id="maillabel" >Email Id <b>: </b></label>
     <input type="tel" name="id" id="empid" size="10"><br><br>
     <label for="code">Secret Code <b>: </b></label>
     <input type="tel" name="code" id="code" size="10" ><br>
-
-    <input type="button" value="login" id="btn">
+    <button [routerLink]="'/work-section'" (click)="changeView()"  id="btn" >login</button>
+   
     <hr>
     <a href="./login.component.html" target="_blank" rel="noopener noreferrer" id="reset" >Reset Code</a>
     &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
-    <!-- <button routerLink="emp-registration" (click)="changeView()" id="regn" >Register Here</button>  -->
-    <a href="" routerLink="emp-registration" (click)="changeView()" id="regn" >Register Here</a>
-</form>
+
+    <a href="" [routerLink]="'/emp-registration'" (click)="changeView()" id="regn" >Register Here</a> -->
+<!-- </form>
 </div>
 
-<div class="managerform" > 
-    <form action="">    
-    <h2>Manager login</h2><hr><br>
-    <label for="id">Manager Id <b>: </b></label>
-    <input type="tel" name="id" id="mngid" size="10"><br><br>
+<div class="managerform">
+    <form action="">     -->
+    
+    
+        <!-- <h2>Manager login</h2><hr><br> -->
+    
+    
+    <!-- <h2>login</h2><hr><br>
     <label for="id">Email Id <b>: </b></label>
     <input type="tel" name="id" id="mail" size="10"><br><br>
     <label for="code">Password <b>: </b></label>
     <input type="tel" name="code" id="pwd" size="10" ><br>
     
-    <input type="button" value="login" id="mngbtn" routerLink="work-section" (click)="changeView()" >
+    <button [routerLink]="'/work-section'" (click)="changeView()"  id="btn1" >login</button>
+    <br>
     <hr>
     <a href="./login.component.html" target="_blank" rel="noopener noreferrer" id="reset" >Reset Password</a>
     &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
-    <!-- <button routerLink="emp-registration" (click)="changeView()" id="regn" >Register Here</button>  -->
-    <a href="" routerLink="emp-registration" (click)="changeView()" id="regn" >Register Here</a>
-
+    
+    <a href="" [routerLink]="'/emp-registration'" (click)="changeView()" id="regn" >Register Here</a>
 </form>
     </div>
+</section> -->
+
+<div class="container" *ngIf="islog" >
+    <form action="">
+        <div class="main">
+            <img  src="https://png.pngtree.com/thumb_back/fh260/back_our/20190620/ourmid/pngtree-finance-app-page-geometric-background-banner-image_157396.jpg" alt="">
+            <div class="content">
+                    <div id="form">
+                        
+                        <MARQUEE ONMOUSEOVER="this.stop()" id="floating" ONMOUSEOUT="this.start()" BEHAVIOR="alternate">Welcome </MARQUEE>
     
-</section>
+                        <h2>User Login </h2>
+                        <input type="email" name="email" placeholder="Enter Email Here">
+                        <input type="password" name="" placeholder="Enter Password Here">
+                        <button class="btnn"  routerLink ="/work-section" >Login</button>
+    
+                        <p id="link">Don't have an account<br>
+                        <a  routerLink="/emp-registration" (click)="changeView()" >Click here</a></p>
+                            
+                    </div>
+            
+        </div>
+    
+        </div>
+    </form>
+    </div>
+    
+    
+        
+        
+    

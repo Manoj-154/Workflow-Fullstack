@@ -1,6 +1,6 @@
 img{
 width: 100%;
-height: fit-content;
+height: 100%;
 position: absolute;
 top: 0px;
 left: 0px;
@@ -19,7 +19,7 @@ left: 0px;
     padding-bottom: 30px;
     border-radius: 10px;
     margin-left: 500px;
-    margin-top:5px;
+    margin-top:75px;
     opacity: 0.8;
    position: absolute;
    top: 10px;
@@ -31,13 +31,13 @@ h2{
 }
 
 #name1{
-    margin-left: 30px;
+    margin-left: 65px;
 }
 #name2{
     margin-left: 45px;
 }
 #email{
-    margin-left: 48px;
+    margin-left: 45px;
 }
 #male{
     margin-left: 55px;
@@ -113,3 +113,7 @@ h2{
     color: black;
     background-color: crimson;
 } */
+
+p{
+    margin-left: 45px;
+}

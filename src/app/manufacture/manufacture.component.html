@@ -1,4 +1,4 @@
-
+<!-- 
 <div class="manufacture" *ngIf="isVisible" >
 
     <MARQUEE ONMOUSEOVER="this.stop()" id="floating"  ONMOUSEOUT="this.start()" BEHAVIOR="alternate">Work to be done </MARQUEE>
@@ -19,7 +19,31 @@
   <div class="buttons">
   
   <button [routerLink]="['/manufacture']" (click)="changeView()" (click)="onsubmit()" id="progress">InProgress</button>
-  <button [routerLink]="['/assembling']" (click)="changeView()" (click)="oncomplete()"  id="completed">Completed</button>
-
+  <button [routerLink]="['/assembling']" (click)="changeView()" (click)="oncomplete()" id="completed">Completed</button>
+  <button [routerLink]="['/assembling']" (click)="changeView()" (click)="oncomplete()" id="create" >Create</button>
   <button [routerLink]="'/work-section'" (click)="changeView()"  id="back" >Back</button>
-  </div>
+  </div> -->
+
+  <!-- ------------- -->
+
+  <section>
+    <div class="tasks" *ngIf="ismanufacture" >  
+          <div class="col-md-8 offset-md-3">
+                <h3> Create_Manufacture_Work </h3>
+                <form  [formGroup]="manufacturework" (ngSubmit) = "onSubmit()">
+                
+                    <div class="form-group">
+                        <label> Tasks</label>
+                        <input type="text" class ="form-control" id = "work"
+                             formControlName="Work" name = "Work">
+                    </div>    
+                    <button class = "btn btn-success" type ="submit">Submit</button>
+                
+                </form>
+                </div> 
+          <button routerLink="/work-section" (click)="changeView()"  id="back" >Back</button>
+    </div>
+</section>
+
+
+<!-- [(ngModel)] = "task.work" -->

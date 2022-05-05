@@ -3,8 +3,9 @@
 
 
 <div *ngIf="isVisible" >
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsmzuVPJeIMgnG34LCPQccQrj_If5to6e4yA&usqp=CAU" alt="">
-<button id="Inprogress"  [routerLink]="['/design']" (click)="changeView()" (click)="onsubmit()" >InProgress</button>
-<button id="completed" [routerLink]="['/analysis']" (click)="changeView()" (click)="oncomplete()" >Completed</button>
+<!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsmzuVPJeIMgnG34LCPQccQrj_If5to6e4yA&usqp=CAU" alt=""> -->
+<img src="https://media.istockphoto.com/photos/black-modern-car-3d-illustration-picture-id1191941530?k=20&m=1191941530&s=612x612&w=0&h=YTPpoHwIq_kLkc4CZk43XGhqdFBrNUHBssaVKAXKst4=" alt="" srcset="">
+<button id="Inprogress"  routerLink="/design" (click)="changeView()" (click)="onsubmit()" >InProgress</button>
+<button id="completed" routerLink="/analysis" (click)="changeView()" (click)="oncomplete()" >Completed</button>
 </div>
 

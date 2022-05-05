@@ -1,4 +1,4 @@
-<section>
+<!-- <section>
     <div class="tasks" *ngIf="isVisible" >  
     
     <form action="">
@@ -40,4 +40,59 @@
     
     </form>
     </div>
-    </section>
+    </section> -->
+    
+    <!-- <section>
+      <div class="tasks" *ngIf="isVisible" >   -->
+          <!-- <div class="tasks" *ngIf="isVisible"  >
+            <h2>Tasks </h2>
+            <hr>
+            <br>
+            <p>Interior - sketches, theme selection, model build, continuous reviews</p><br>
+            <p>Exterior - same as above until design freeze</p><br>
+            <p>Concept creation for management presentation, potential auto-show use</p><br>
+            <p>Exterior colors, interior-trim materials selection</p><br>
+            <p>Management and engineering reviews</p><br> -->
+
+            <!-- <button  routerLink="/status" (click)="changeView()" id="update">Update Status</button> -->
+<!-- 
+            <div class="col-md-13 offset-md-13">
+                  <h3> Create Work </h3>
+                  <form (ngSubmit) = "onSubmit()">
+                  
+                      <div class="form-group">
+                          <label> Tasks</label>
+                          <input type="text" class ="form-control" id = "work"
+                              [(ngModel)] = "task.work" name = "Work">
+                      </div>    
+                      <button class = "btn btn-success" type ="submit">Submit</button>
+                  
+                  </form>
+                  </div> 
+            <button routerLink="/work-section" (click)="changeView()"  id="back" >Back</button> -->
+            <!-- <button routerLink="/create-design" (click)="changeView()" id="create" >Create</button> -->
+<!-- 
+          </div>
+    </section> -->
+<!-- ----------------- -->
+
+    <section>
+      <div class="tasks" *ngIf="isdesign" >  
+            <div class="col-md-8 offset-md-3">
+                  <h3> Create_Design_Work </h3>
+                  <form  [formGroup]="designwork" (ngSubmit) = "onSubmit()" >
+                  
+                      <div class="form-group">
+                          <label> Tasks</label>
+                          <input type="text" class ="form-control" id = "work"
+                               formControlName = "Work" >
+                      </div>    
+                      <button class = "btn btn-success" type ="submit">Submit</button>
+                  
+                  </form>
+                  </div> 
+            <button routerLink="/work-section" (click)="changeView()"  id="back" >Back</button>
+      </div>
+</section>
+
+<!-- [(ngModel)] = "task.work" -->

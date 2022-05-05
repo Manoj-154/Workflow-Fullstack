@@ -1,0 +1,21 @@
+<section *ngIf = "isVisible" >
+    <h2>Tasks to be done..</h2>
+    <table class="table table-striped" > 
+    <thead>
+        <tr>
+            <th>Assigned Work</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let task of tasks" >
+            <td> {{ task.work}} </td>
+            
+            <td>
+                <button routerLink="/manufacture"  (click)="InPprogress()" class = "btn btn-info">InProgress</button>
+                <button routerLink="/test-drive"  (click)="oncomplete()" class = "btn btn-danger" style="margin-left: 10px">Completed</button>
+                <button routerLink="/manufacture" class = "btn btn-info" style="margin-left: 10px"> Create workflow</button>
+            </td>
+        </tr>
+    </tbody>
+    </table>
+    </section>

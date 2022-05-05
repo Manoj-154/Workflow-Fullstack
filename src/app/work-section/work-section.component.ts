@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class WorkSectionComponent implements OnInit {
 
   isVisible=true
-
+  issidebar=true
   constructor() { }
 
   ngOnInit(): void {
@@ -17,5 +17,7 @@ export class WorkSectionComponent implements OnInit {
   changeView(){
     this.isVisible=false
   }
+
+
 
 }

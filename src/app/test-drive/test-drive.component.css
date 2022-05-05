@@ -1,4 +1,4 @@
-
+/* 
 .first{
 
     color: black;
@@ -77,7 +77,7 @@ margin-left: 490px;
 #InProgress:hover{
     color:  black;
     background-color: crimson;
-    /* transition: all .7s  ease; */
+    transition: all .7s  ease;
 }
 
 #completed:hover{
@@ -100,4 +100,57 @@ margin-left: 490px;
 #back:hover{
     color: crimson;
     background-color:black;
+} */
+
+/* ------------- */
+.tasks{
+    text-align:center;
+    margin-top: 200px;
+    background-color:black;
+    font-weight:bolder;
+    color: crimson;
+    padding: 10px 30px;
+    width: max-content;
+    border-radius: 5px;
+    border: 1px solid black;
+    opacity: 0.9;
+    margin-left: 550px;
+    
+}
+
+section{
+    background-color:#042331;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    top: 0px;
+}
+
+#update{
+    margin-top: 20px;
+margin-bottom: 20px;
+cursor: pointer;
+}
+
+#update:hover{
+    color: wheat;
+    background-color:crimson;
+}
+
+#back{
+    border-radius: 3px;
+    padding: 10px 15px;
+    width: 100px;
+    color: white;
+    background-color: black;
+    top:20px;
+    right: 50px;
+    position:absolute;
+}
+
+#back:hover{
+    background-color: wheat;
+    color: black;
+    cursor: pointer;
+    
 }

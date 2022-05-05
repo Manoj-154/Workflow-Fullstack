@@ -7,15 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ManagerloginComponent implements OnInit {
 
-  isVisible=true
+  
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  changeView(){
-    this.isVisible = false
-  }
-
+  
 }

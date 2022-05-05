@@ -52,8 +52,19 @@ p{
     position: absolute;
     border-radius: 3px;
 }
+#create{
+    color: crimson;
+    background-color: black;
+    top: 100px;
+    right: 30px;
+    width: max-content;
+    padding: 10px 20px;
+    position: absolute;
+    border-radius: 3px;    
+}
 
-#back:hover{
+#back:hover,#create:hover{
     color: black;
     background-color: wheat;
+    cursor: pointer;
 }

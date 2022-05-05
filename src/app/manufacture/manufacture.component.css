@@ -1,4 +1,4 @@
-.manufacture{
+/* .manufacture{
     background-color:darkslategray;
     color:black;
     padding: 30px 30px;
@@ -12,7 +12,7 @@
     margin-left: -10px;
     width: 450px;
     position: relative;
-    /* opacity: .9; */
+    opacity: .9;
 }
 
 
@@ -20,7 +20,6 @@
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-weight: bolder;
     font-size: 20px;
-    /* background-color: black; */
     color: black;
     border-radius:5px;
     width: 100%;
@@ -31,7 +30,7 @@
 p{
     color: solid black ;
     line-height: 35px;
-}
+} */
 
 /* p:hover{
     color: white;
@@ -43,7 +42,7 @@ p{
     font-family: cursive;
     transition: all .5s ease;
 } */
-
+/* 
 #backimage{
     position: relative;
     width: 855px;   
@@ -54,15 +53,15 @@ p{
 }
 
 .buttons{
-    position:absolute;
-    margin-top: -200px;
+    position:relative;
+    margin-top: 200px;
     margin-left: 550px;
     padding: 3px 5px;
     display: flex;
     flex-direction: column;
     line-height: 20px;
-}
-
+} */
+/* 
 #progress{
     
     color: crimson;
@@ -71,57 +70,156 @@ p{
     margin-bottom: 10px;
     line-height: 20px;
     border-radius: 5px;
-    width: 200px;
-    height: 50px;
+    width: max-content;
+    height: max-content;
     margin-left: 330px;
     margin-top: -150px;
     font-weight: bolder;
     font-size: 20px;
     letter-spacing:1px;
-}
+} */
 
+/* #completed{
+    
+    color: crimson;
+    background-color: black;
+    padding: 5px 5px;
+    margin-bottom: 10px;
+    line-height: 20px;
+    border-radius: 5px;
+    width: max-content;
+    height: max-content;
+    margin-left: 330px;
+    margin-top: 180px;
+    letter-spacing:1px;
+} */
+
+/* 
 #completed{
     color: crimson;
     background-color: black;
         padding: 5px 10px;
-    width: 200px;
+    width: max-content;
     height: 50px;
     border-radius: 5px;
     margin-left: 330px;
     font-weight: bolder;
     font-size: 20px;
     letter-spacing: 1px;
-}
-#completed:hover{
+} */
+/* #completed:hover{
     color: black;
-    background-color: crimson;
+   
+    background-color: whitesmoke;
     cursor: pointer;
-    transition: all .5s ease;
+   
 }
 
 #progress:hover{
     color: black;
-    background-color: crimson;
-    
+    background-color: whitesmoke;
     cursor: pointer;
 }
-
+#completed{
+    border-radius: 3px;
+    padding: 10px 15px;
+    width: max-content;
+    color: white;
+    background-color: black;
+    top:500px;
+    left: 955px;
+    position:fixed;
+}
+#progress{
+    border-radius: 3px;
+    padding: 10px 15px;
+    width: max-content;
+    color: white;
+    background-color: black;
+    top:500px;
+    left: 1080px;
+    position:fixed;
+}
 
 #back{
     border-radius: 3px;
     padding: 10px 15px;
     width: 100px;
-
     color: white;
     background-color: black;
+     top:500px;
+     left: 830px;
+    position:fixed;
+}
 
-    top:150px;
-    right: 800px;
+
+#back:hover,#create:hover{
+    background-color:whitesmoke;
+    color: black;
+    cursor: pointer;
+    
+}
+
+#create{
+    border-radius: 3px;
+    padding: 10px 15px;
+    width: 100px;
+    position: fixed;
+    color: white;
+    background-color: black;
+    top: 500px;
+    left: 700px;
+} */
+
+/* ----------- */
+
+.tasks{
+    text-align:center;
+    margin-top: 200px;
+    background-color:black;
+    font-weight:bolder;
+    color: crimson;
+    padding: 10px 30px;
+    width: max-content;
+    border-radius: 5px;
+    border: 1px solid black;
+    opacity: 0.9;
+    margin-left: 550px;
+    
+}
+
+section{
+    background-color:#042331;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    top: 0px;
+}
+
+#update{
+    margin-top: 20px;
+margin-bottom: 20px;
+cursor: pointer;
+}
+
+#update:hover{
+    color: wheat;
+    background-color:crimson;
+}
+
+#back{
+    border-radius: 3px;
+    padding: 10px 15px;
+    width: 100px;
+    color: white;
+    background-color: black;
+    top:20px;
+    right: 50px;
     position:absolute;
 }
 
 #back:hover{
-    background-color: crimson;
+    background-color: wheat;
     color: black;
     cursor: pointer;
     

@@ -7,13 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  isVisible=true
+//   islog=true
 
+//   constructor() { }
+
+//   ngOnInit(): void {
+//   }
+//   changeView(){
+//      this.islog=false
+//    }
+// }
+
+islog=true
   constructor() { }
-
-  ngOnInit(): void {
-  }
-  changeView(){
-     this.isVisible = false
-   }
+ngOnInit(): void {
+}
+changeView(){
+  this.islog=false
+}
 }

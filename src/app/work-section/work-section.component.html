@@ -10,23 +10,23 @@
     <i class="fas fa-bars" id="btn">&nbsp; work-section </i>
     <i class="fas fa-times" id="cancel"> &nbsp; cancel</i>
   </label>
-  <div class="sidebar">
+  <div class="sidebar" *ngIf="issidebar" >
     <header>work-section</header>
     
   <ul>
-   <li><a  [routerLink]="'/design'" (click)="changeView()" href="#"><i class="fas fa-qrcode"></i>Design</a></li>
-   <li><a  [routerLink]="'/analysis'"  (click)="changeView()" href="#"><i class="fas fa-sliders-h"></i>Analysis</a></li>
-   <li><a  [routerLink]="'/manufacture'" (click)="changeView()"  href="#"><i class="fa fa-car fa-lg"></i>Manufacturing</a></li>
-   <li><a  [routerLink]="'/assembling'" (click)="changeView()"  href="#"><i class="fa fa-american-sign-language-interpreting"></i>Assembling</a></li>
-   <li><a  [routerLink]="'/test-drive'" (click)="changeView()" ><i class="fas fa-link"></i>Testing</a></li>
-   <li><a  [routerLink]="'/launch'" (click)="changeView()"  href="#"><i class='fas fa-coins'></i>Launch</a></li>
+   <li><a  routerLink="/design" (click)="changeView()" href="#"><i class="fas fa-qrcode"></i>Design</a></li>
+   <!-- <li><a  [routerLink]="'/analysis'"  (click)="changeView()" href="#"><i class="fas fa-sliders-h"></i>Analysis</a></li> -->
+   <li><a  routerLink="/manufacture" (click)="changeView()"  href="#"><i class="fa fa-car fa-lg"></i>Manufacturing</a></li>
+   <!-- <li><a  [routerLink]="'/assembling'" (click)="changeView()"  href="#"><i class="fa fa-american-sign-language-interpreting"></i>Assembling</a></li> -->
+   <li><a  routerLink="/test-drive" (click)="changeView()" ><i class="fas fa-link"></i>Testing</a></li>
+   <li><a  routerLink="/launch" (click)="changeView()"  href="#"><i class='fas fa-coins'></i>Launch</a></li>
    <!-- <li><a (click)="changeView()" routerLink="about" href="#"><i class="far fa-question-circle"></i>About</a></li>
    <li><a (click)="changeView()" routerLink="contact" href="#"><i class="far fa-envelope"></i>Contact</a></li> -->
   </ul>
 
 </div>
 <div class="logout" >
-  <button  id="logout" [routerLink]="['/login']" (click)="changeView()">Logout</button>
+  <button  id="logout" routerLink="/login" (click)="changeView()">Logout</button>
 </div>
 </section>
 
